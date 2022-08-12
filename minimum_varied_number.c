@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-/*
-#include <stdlib.h>
-#include <stdbool.h>
-#include <string.h>
-*/
 
 int solve(int num);
 int find(int border, int track, int sum, int expected, int start);
@@ -14,7 +9,6 @@ int powTen(int x);
 void main()
 {
 
-//    printf("%d",solve(16));
 
     int testCases = 0;
     scanf("%d", &testCases);
