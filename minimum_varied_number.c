@@ -14,6 +14,19 @@ Output
 Print t integers — the answers to the given test cases.
 
 
+example:
+input:
+    -4
+    -20
+    -8
+    -45
+    -10
+
+output:
+    -389
+    -8
+    -123456789
+    -19
 */
 
 
@@ -86,6 +99,65 @@ int powTen(int x) {
 }
 
 
+
+
+
+/*   The python version of this code:
+
+
+from replit import clear
+import random
+
+
+def solve(num):
+    sum = 0
+    digit = 0
+    for i in range(9, 0, -1):
+        sum += i
+        digit += 1
+        if sum >= num:
+            break
+
+    return find(digit, 1, 0, num, 1)
+
+
+def find(border, track, sum, expected, start):
+
+    for i in range(start, 10):
+        sum += i
+        if track < border:
+            x = find(border, track + 1, sum, expected, i + 1)
+            if x >= 1:
+                return (powTen(border - track) * i) + x
+        else:
+            if sum == expected:
+                return i
+        sum -= i
+
+    return 0
+
+
+def powTen(x):
+    result = 1
+    for i in range(0, x):
+        result *= 10
+    return result
+
+
+testCases = int(input())
+
+results = []
+
+for i in range(0, testCases):
+    num = int(input())
+    results.append(solve(num))
+
+clear()
+
+for result in results:
+    print(result)
+
+*/
 
 
 
