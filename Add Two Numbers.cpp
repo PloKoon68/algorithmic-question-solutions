@@ -11,6 +11,10 @@ Output: [7,0,8]
 Explanation: 342 + 465 = 807.
 */
 
+struct ListNode {
+    int val;
+    struct ListNode* next;
+};
 
 ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
     struct ListNode* sum = new ListNode;
