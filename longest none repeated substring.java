@@ -2,7 +2,7 @@
 
 //https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
 
-
+//solved this problem using ascii char array. This way it processessis in o(1) when accessing elements.
 
 
 
