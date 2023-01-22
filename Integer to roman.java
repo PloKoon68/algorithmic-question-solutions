@@ -1,6 +1,9 @@
 //converting integers from 1 to 3999 to roman number.
 //https://leetcode.com/problems/integer-to-roman/description/
 
+//converting roman to integer
+//https://leetcode.com/problems/roman-to-integer/description/
+
 
 class Solution {
      public String intToRoman(int num) {
