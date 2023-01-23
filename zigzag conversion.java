@@ -1,3 +1,6 @@
+//converting a string to its zigzag verion
+//https://leetcode.com/problems/zigzag-conversion/description/
+
 
 class Solution {
      public String convert(String s, int numRows) {
