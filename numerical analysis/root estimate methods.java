@@ -38,5 +38,34 @@ public class Main {
         }
 
     }
+    
+     public static double fixedPointEstimate(double x) {
+        return 5.0D / (Math.exp(0.5D * x) + 1.2D);
+    }
+
+    public static void fixedPoint(double xi, int iterate) {
+        double cur = xi;
+
+        for(int i = 0; i < iterate; ++i) {
+            System.out.print("x " + cur);
+            System.out.print("  y: " + realFunc(cur));
+            System.out.println("    error:" + (fixedPointEstimate(cur) - cur) / fixedPointEstimate(cur));
+            cur = fixedPointEstimate(cur);
+        }
+
+    }
+
+    public static void newtonRaphson(double xi, int iterate) {
+        double cur = xi;
+
+        for(int i = 0; i < iterate; ++i) {
+            System.out.println("x: " + cur + "    f(x): " + realFunc(cur));
+            cur -= realFunc(cur) / derrivative(cur);
+        }
+
+    }
+    public static void main(String[] args) {
+        fixedPoint(1.0D, 7);
+    }
 
 }
