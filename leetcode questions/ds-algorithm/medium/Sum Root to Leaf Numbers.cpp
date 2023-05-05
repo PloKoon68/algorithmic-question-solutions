@@ -19,19 +19,18 @@ public:
         return solve(root, 0);
     }
 
-public:
     int solve(TreeNode* node, int num) { 
-  num += node->val;
-  int sum = 0;
-  if(node->left)    
-      sum += solve(node->left, num * 10);
-  if(node->right)
-      sum += solve(node->right, num * 10);
+      num += node->val;
+      int sum = 0;
+      if(node->left)    
+          sum += solve(node->left, num * 10);
+      if(node->right)
+          sum += solve(node->right, num * 10);
 
-  if(!node->left && !node->right)
-    return num;
-  
-  return sum;
-}
+      if(!node->left && !node->right)
+        return num;
+
+      return sum;
+    }
 
 };
