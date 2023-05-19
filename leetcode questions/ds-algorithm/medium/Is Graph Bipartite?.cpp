@@ -20,9 +20,7 @@ public:
                 int current, vector<int> visited) {
 
     for (int edge : graph[current]) {
-      if (edge == before)
-        continue;
-      else if (colors[edge] == -1) {
+      if (colors[edge] == -1) {
         colors[edge] = !colors[current];
         if (!traverse(colors, graph, current, edge, visited))
           return false;
