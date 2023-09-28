@@ -1,3 +1,5 @@
+//https://leetcode.com/problems/sort-array-by-parity/description/?envType=daily-question&envId=2023-09-28
+
 class Solution {
 public:
     std::vector<int> sortArrayByParity(std::vector<int>& nums) {
