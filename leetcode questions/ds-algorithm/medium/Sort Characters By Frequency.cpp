@@ -1,4 +1,5 @@
-//https://leetcode.com/problems/sort-characters-by-frequency/?envType=daily-question&envId=2024-02-07
+//question:  https://leetcode.com/problems/sort-characters-by-frequency/?envType=daily-question&envId=2024-02-07
+//my solution:  https://leetcode.com/problems/sort-characters-by-frequency/solutions/4697646/beats-95-18-c-priority-queue-hash-array/
 
 class Solution {
 public:
