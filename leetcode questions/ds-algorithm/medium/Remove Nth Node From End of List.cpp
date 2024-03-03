@@ -1,4 +1,5 @@
-//https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/?envType=daily-question&envId=2024-03-03
+//question:         https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/?envType=daily-question&envId=2024-03-03
+//my solution       https://leetcode.com/problems/remove-nth-node-from-end-of-list/solutions/4816361/beats-100-c/
 
 /**
  * Definition for singly-linked list.
