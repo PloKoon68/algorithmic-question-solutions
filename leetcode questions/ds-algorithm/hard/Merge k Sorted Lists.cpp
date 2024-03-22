@@ -1,5 +1,5 @@
-//https://leetcode.com/problems/merge-k-sorted-lists/
-
+//question:     https://leetcode.com/problems/merge-k-sorted-lists/
+//my solution:  https://leetcode.com/problems/merge-k-sorted-lists/solutions/4911850/c-priority-queue-simple/
 
 /**
  * Definition for singly-linked list.
